@@ -1,7 +1,7 @@
 :root {
     --primary-color: #37e6d7;
     --secondary-color: #076ab5;
-    --text-color: #f8ff39;
+    --text-color: #000;
     --background-color: #a00008;
   }
 
@@ -39,28 +39,89 @@ a {
 
 header {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem; 
+  grid-template-columns: 160px 1fr; /* Two columns: one for the logo and one for the nav */
+  align-items: center; /* Vertically align the content */
+  gap: 1rem; /* Space between the logo and nav */
+  padding: 1rem; /* Add padding to the header */
 }
 
-.logo {
-  grid-column: 1;
-  align-items: center;
-  align-content: center;
-  vertical-align: auto;
+.logo img {
+  max-width: 100%;
 }
-
 
 nav {
-  display: contents; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
 }
 
-nav a {
-  text-align: center;
-  grid-column: auto; /* Chaque lien occupe sa propre colonne */
-  font-size: 1.2rem;
+/* The CSS adventure awaits you section starts here */
+.adventures {
+  text-align: center; /* Center-align the section heading */
+  padding: 2rem; /* Add padding around the section */
+  background-color: var(--primary-color); /* Optional: light background for contrast */
+}
 
+.adventures h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five equal-width columns */
+  gap: 4rem; /* Space between the items */
+}
+
+figure {
+  text-align: center; /* Center-align each figure */
+  margin: 0; /* Remove default margin */
+}
+
+figure img {
+  width: 100%; /* Let the image fill the width of the container */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+
+figcaption {
+  font-style: italic; 
+  color: var(--text-color);
+}
+
+/*the footer style starts here*/
+
+footer {
+  display: flex; 
+  justify-content: space-between; /* Space between text and social links */
+  align-items: center; 
+  padding: 1rem 2rem; /* Add padding */
+  background-color: var(--secondary-color); /* Footer background color */
+}
+
+footer p {
+  margin: 0; /* Remove default margin for the paragraph */
+  font-size: 1rem; /* Adjust text size */
+  color: var(--text-color);
+}
+
+.sociallinks {
+  display: flex; /* Arrange links horizontally */
+  gap: 1rem; /* Add space between icons */
+}
+
+.sociallinks a img {
+  width: 32px; /* Set a fixed size for the icons */
+  height: 32px; /* Ensure consistent height */
+  border-radius: 50%; /* Optional: round icons */
+  transition: transform 0.3s; /* Add a hover effect */
+}
+
+.sociallinks a img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
 
 
