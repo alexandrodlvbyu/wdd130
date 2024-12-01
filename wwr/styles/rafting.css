@@ -78,10 +78,7 @@ nav {
   padding: 2rem; 
   background-color: var(--primary-color);
 
-.adventures h2 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
+
 
 .adventure-gallery {
   display: grid;
@@ -122,7 +119,7 @@ footer p {
 
 .sociallinks {
   display: flex; 
-  gap: 3rem; /
+  gap: 3rem; 
 }
 
 .sociallinks img {
