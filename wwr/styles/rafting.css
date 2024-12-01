@@ -5,38 +5,7 @@
     --background-color: #a00008;
   }
 
-h1{
-  color: var(--primary-color);
-}
-
-h2{
-    color: var(--secondary-color);
-  }
-
-p {
-  color: var(--secondary-color);
-}
-
-/* This removes the line of an hyperlink */
-a {
-    text-decoration: none;
-  }
-
-  /* The following funcion limits the width of a page */
-.container {
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: 900;
-}
-
+/* Here starts de header styling */
 header {
   display: grid;
   grid-template-columns: 160px 1fr; /* Two columns: one for the logo and one for the nav */
@@ -48,14 +17,62 @@ header {
 .logo img {
   max-width: 100%;
 }
-
 nav {
   display: flex; 
   justify-content: space-around; 
   align-items: center; 
 }
 
+/* Here starts de hero styling */
+
+.hero {
+  position: relative; /* Enables positioning of child elements */
+  display: block;
+  width: 100%;
+  height: 50%; /* Allows height to adjust based on content */
+}
+
+.hero img {
+  width: 100%; /* Adjust the width as needed */
+  max-height: 500px; /* Set the maximum height */
+}
+
+.hero .overlay {
+  position: absolute; /* Allows precise positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  text-align: center; /* Align text centrally */
+  color: white; /* Ensure text is readable */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+  padding: 1rem; /* Add some spacing */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  margin: 0.5rem 0;
+  color: var(--primary-color); /* Use your custom color */
+}
+
+
+.hero figure img {
+  width: 150px; /* Adjust image size */
+  height: auto;
+  border-radius: 50%; /* Optional: round the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+.hero figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: white; /* Adjust for readability */
+}
+
+
+
 /* The CSS adventure awaits you section starts here */
+
 .adventures {
   text-align: center; 
   padding: 2rem; 
@@ -88,36 +105,29 @@ figcaption {
   font-style: initial; 
   color: var(--text-color);
 }
-
-/*the footer style starts here*/
+}
+/* the footer style starts here */
 
 footer {
   display: flex; 
   justify-content: space-between; 
-  align-items: center; 
   padding: 1rem 2rem; 
-  background-color: var(--background-color); 
-  color: var(--text-color); 
+  background-color: var(--secondary-color);
 }
 
-
 footer p {
-  margin: 0; /* Remove default margin for the paragraph */
-  font-size: 1rem; /* Adjust text size */
+  font-size: 1rem;
+  color: var(--text-color);
 }
 
 .sociallinks {
-  display: flex; /* Arrange links horizontally */
-  gap: 1rem; /* Add space between icons */
+  display: flex; 
+  gap: 3rem; /
 }
 
-.sociallinks a img {
-  width: 32px; /* Set a fixed size for the icons */
-  height: 32px; /* Ensure consistent height */
-  border-radius: 50%; /* Optional: round icons */
-  transition: transform 0.3s; /* Add a hover effect */
+.sociallinks img {
+  width: 32px; 
+  height: 32px; 
+  border-radius: 8px; /* round icons */
 }
 
-.sociallinks a img:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-}
