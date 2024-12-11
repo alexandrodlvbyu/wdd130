@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 HTML Form-User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+</head>
+<body>
+    <header>
+        <h1> WDD 130/ ALEXANDRE DE LA VEGA/ HTML Form </h1>
+
+    </header>
+    <main>
+        <form action="test">
+            <!-- <fieldset>
+                <legend>Contact information</legend>
+                <label for="fullname">Write your full name</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="useremail">Write your full e-mail</label>
+                <input type="text" id="useremail" name="useremail">
+            </fieldset>  -->
+            
+            <!-- On peut aussi inserter un input sur un label de la façon suivante -->
+            
+            <fieldset>
+                <legend>Contact information </legend>
+                <label for="fullname">Full name <input type="text" id=fullname name="fullname"></label>
+                <label for="email>"> Email <input type="text" id="email" name="email"> </label>
+            </fieldset>
+
+        
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="brownser">What is your favorite brownser?</label>
+                <select name="brownser" id="brownser">
+                    <option value="chrome"> Chrome </option>
+                    <option value="firefox"> Firefox </option>
+                    <option value="Edge"> Edge </option>
+                </select>
+              
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"> 
+                <label for="feedback">List the places you have lived</label>
+                <textarea name="feedback" id="feedback" rows="4" placeholder="Stillwater,Florida"></textarea>
+        
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>2025 / HTML Form - User Poll Activity / Alexandro de la Vega Cros</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alexandro de la Vega Cros">
+        <meta name="description" content="offer company contacts to our customers">
+        <title> contact information of the company</title>
+        <link rel="stylesheet" href="styles/rafting.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body> 
+        <header>
+            <div class="logo">
+                <img src="images/roundlogo.png" alt="logo">
+            </div>
+            <nav>
+                <a href="index.html">Index</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+         
+        <section class="google-maps">
+            <div class="googlemaps">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39663.8066449446!2d1.4329486772402367!3d43.60617134383609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6071361991%3A0xd93c55b3650b72c7!2sBasilique%20Saint-Sernin%20de%20Toulouse!5e1!3m2!1sfr!2sfr!4v1733938601142!5m2!1sfr!2sfr" width="600" height="450";" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+             </div>
+        </section>
+
+        <section class="contact-us">
+            <h1>Contact US </h1>
+            <h2>Sent us a message</h2>
+
+            <p>Phone: 06 99 99 99 99</p>
+            <p>Email: acros@byui.edu</p>
+        </section>
+
+
+             <!-- Employee images -->
+              <section class="profile-images">
+                <h2>Meet Our Team</h2>
+                <div class="employee">
+                    <img src="../images/profile.png" alt="Manager">
+                    <p>Alexandro de la Vega - Manager</p>
+                </div>
+                <div class="employee">
+                    <img src="../images/adventure.png" alt="Guide">
+                    <p>Renato Rivera - Adventure Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="../images/customer.png" alt="Customer">
+                    <p>José Buitrago - Customer Support</p>
+                </div>
+              </section>
+
+
+             <!-- Contact Form -->
+             <section class="contact-form">
+                <h2>Contact Form</h2>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <p>Purpose of Your Message:</p>
+                    <label>
+                        <input type="radio" name="purpose" value="general" required> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="newsletter"> Subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        </main>
+
+         <footer>
+            <p>© 2024, RiverQuest Adventures, Alexandro de la Vega</p>
+            <nav class="sociallinks">
+                <a href="https://www.facebook.com/">
+                        <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com">
+                    <img src="images/x.png" alt="Twitter/X">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+         </footer>
+    
+    </body>  
+</html >

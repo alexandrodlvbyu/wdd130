@@ -1,0 +1,55 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+  }
+
+  body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: #333
+  
+    }
+   
+   body {
+    background: #fff;
+   }
+
+header {
+    margin: 0 auto;
+    width: 650px;
+      }
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+        }
+
+form {
+    width: 650px;
+    margin: 0auto;
+    padding: 1rem;
+    border: 1px solid rgb(red, green, blue);
+    border-radius: .5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(red, green, blue);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy
+    font-size 1.3em;
+}
+
+
+
