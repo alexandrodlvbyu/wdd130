@@ -236,7 +236,6 @@ footer p {
 }
 
 
-/* Grid Layout Section */
 
 /* Grid Layout Section */
 .site-info .grid-container {
@@ -264,6 +263,7 @@ footer p {
 .newsletter {
   text-align: center;
   padding: 2rem;
+  background-color: var(--secondary-color);
 }
 
 .newsletter form {
