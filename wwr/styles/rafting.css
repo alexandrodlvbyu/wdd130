@@ -133,7 +133,6 @@ footer p {
 /* Images "meet our team" CSS Style */
 
 .profile-images {
-  padding: rem;
   background-color: var(--background-color);
   text-align: center;
 }
